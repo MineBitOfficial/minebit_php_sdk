@@ -6,7 +6,7 @@ const ACCESS_KEY = "aQ5rQg1RjgZKnttH6SRdURulcb8J9Y0F";
 const SECRET_KEY = "165hB8OT2Hl8kDFUiiOR7cmqLAUbBh0n";
 $client = new minebit(new minebit_authentication(ACCESS_KEY, SECRET_KEY));
 
-//获取MineBit行情（盘口数据）
+//get minebit ticker
 function minebit_ticker()
 {
         global $client;
