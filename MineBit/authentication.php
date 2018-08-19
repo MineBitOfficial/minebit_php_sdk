@@ -19,3 +19,5 @@ class minebit_authentication
         return $data;
     }
 }
+
+?>
