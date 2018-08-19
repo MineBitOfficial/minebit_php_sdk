@@ -1,4 +1,5 @@
 <?php
+
 require_once (dirname(__FILE__) . '/base.php');
 
 class minebit extends minebit_base{
@@ -29,12 +30,12 @@ class minebit extends minebit_base{
 	}
 
 	//get finished orders 
-	public function orderInfoApi($params = null) {
+	public function finishedOrdersApi($params = null) {
 		return $this -> post("/openapi/v1/trade/finished_orders", $params);
 	}
 
 	//get pending orders
-	public function orderInfoApi($params = null) {
+	public function pendingOrdersApi($params = null) {
 		return $this -> post("/openapi/v1/trade/pending_orders", $params);
 	}
 
@@ -45,8 +46,8 @@ class minebit extends minebit_base{
 	}
 
 	//get user asset 
-	public function depthApi($params = null) {
-		return $this -> post("/openapi/v1/userasset/balance", $params);
+	public function assetApi($params = null) {
+		return $this -> post("/openapi/v1/userasset/balances", $params);
 	}
 
 	//withdrawl
@@ -59,3 +60,5 @@ class minebit extends minebit_base{
 		return $this -> post("/openapi/v1/wallet/cancel_withdraw", $params);
 	}
 }
+
+?>

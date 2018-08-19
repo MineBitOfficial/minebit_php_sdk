@@ -11,9 +11,9 @@ require_once (dirname(__FILE__) . '/authentication.php');
 
 class minebit_base {
 	
-	const WEB_BASE = 'https://api-test.minebit.com/';//API test
+	const WEB_BASE = 'https://api-test.minebit.com/';//API测试接口
 
-	//const WEB_BASE = 'https://api.minebit.com/';//API host
+	//const WEB_BASE = 'https://api.minebit.com/';//API正式接口
 
 	
 	private $_rpc;

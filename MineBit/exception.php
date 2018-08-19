@@ -19,3 +19,4 @@ class minebit_exception extends Exception
         return $this->http_code;
     }
 }
+?>

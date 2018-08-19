@@ -84,3 +84,4 @@ class minebit_rpc{
 		return $json;
 	}
 }
+?>
