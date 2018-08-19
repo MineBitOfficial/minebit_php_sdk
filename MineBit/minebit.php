@@ -28,11 +28,27 @@ class minebit extends minebit_base{
 		return $this -> post("/openapi/v1/trade/order_info", $params);
 	}
 
+	//get finished orders 
+	public function orderInfoApi($params = null) {
+		return $this -> post("/openapi/v1/trade/finished_orders", $params);
+	}
+
+	//get pending orders
+	public function orderInfoApi($params = null) {
+		return $this -> post("/openapi/v1/trade/pending_orders", $params);
+	}
+
 
 	//get market depth
 	public function depthApi($params = null) {
-		return $this -> post("/openapi/v1/trade/depth", $params);
+		return $this -> post("/openapi/v1/market/depth", $params);
 	}
+
+	//get user asset 
+	public function depthApi($params = null) {
+		return $this -> post("/openapi/v1/userasset/balance", $params);
+	}
+
 	//withdrawl
 	public function withdrawApi($params = null) {
 		return $this -> post("/openapi/v1/wallet/withdraw", $params);
